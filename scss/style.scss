@@ -1,0 +1,16 @@
+//abstracts 변수, 믹스인 정의
+@import "abstracts/color";
+@import "abstracts/mixins";
+
+//base 기본 정의
+@import "base/base";
+@import "base/typo";
+// @import "base/animation";
+
+//components 반복 사용되는 UI요소 정의
+// @import "components/button";
+
+//layout 레이아웃 박스 크기관련 정의
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";

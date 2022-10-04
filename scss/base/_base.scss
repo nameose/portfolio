@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Pretendard-Regular", sans-serif;
+  color: $color-text1;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $color-primary;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: $color-text1;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}

@@ -1,0 +1,184 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+main section {
+  padding: 20px 0;
+}
+.home {
+  position: relative;
+  background-color: $color-gray;
+  text-align: center;
+  .slogan {
+    margin: 20px auto 0;
+    width: 30%;
+    p {
+      letter-spacing: 3px;
+      color: $color-text2;
+      font-size: 42px;
+
+      &:nth-child(2) {
+        letter-spacing: 5px;
+        font-weight: 700;
+        margin-top: 3px;
+      }
+      &:last-child {
+        letter-spacing: 5px;
+        font-weight: 700;
+        font-size: 55px;
+      }
+      span {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+      }
+    }
+  }
+  .down-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $color-primary;
+    position: absolute;
+    left: 48%;
+    bottom: 0;
+    z-index: 10;
+    transition: 0.4s;
+    a {
+      padding: 25px 20px 36px;
+
+      img {
+        position: relative;
+        top: 29%;
+        width: 50%;
+      }
+    }
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+  &::after {
+    content: "";
+    background: url(../../img/image.svg) no-repeat center;
+    background-size: 115% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 31%;
+  }
+}
+
+.about {
+  position: relative;
+  height: 100vh;
+  margin-top: 70px;
+}
+
+.skill {
+  position: relative;
+  .animation {
+    padding: 150px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 58px 43px;
+    .chart {
+      margin: 0 20px;
+      position: relative;
+      h3 {
+        position: absolute;
+        left: 50%;
+        top: 44%;
+        transform: translate(-50%, -50%);
+      }
+      p {
+        margin-top: 8px;
+        font-family: "Montserrat", sans-serif;
+      }
+      svg {
+        width: 220px;
+        height: 220px;
+        fill: transparent;
+        stroke-width: 10px;
+        stroke-dasharray: 630;
+        stroke-dashoffset: 630;
+        stroke: $color-primary;
+        transform: rotate(-90deg);
+        stroke-linecap: round;
+      }
+    }
+  }
+  &::after {
+    content: "";
+    background: url(../../img/image.svg) no-repeat center;
+    background-size: 115% 100%;
+    position: absolute;
+    top: 95%;
+    left: 0;
+    width: 100%;
+    padding-top: 31%;
+    transform: scaleY(-1);
+  }
+}
+.projects {
+  position: relative;
+  margin-top: 50px;
+  h2 {
+    margin: 50px 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  .project-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px 0;
+    margin: 25px 0;
+    img {
+      width: 60%;
+    }
+    .text {
+      width: 40%;
+    }
+  }
+  .project2 .project-wrap {
+    flex-direction: row-reverse;
+  }
+  .project4 .project-wrap {
+    flex-direction: row-reverse;
+  }
+}
+.contact {
+  position: relative;
+  height: 100%;
+  background: url(../../img/footer-bg.png) no-repeat center;
+  padding: 0;
+  .contact-wrap {
+    display: flex;
+    align-items: center;
+    margin: 100px 0;
+    img {
+      position: relative;
+      left: -80px;
+    }
+    .info {
+      position: relative;
+      left: 200px;
+      h2 {
+        font-size: 42px;
+        font-weight: 500;
+        color: $color-white;
+        margin-bottom: 50px;
+      }
+      p {
+        color: #fff;
+        text-align: start;
+        font-size: 18px;
+        &:last-child {
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+}
