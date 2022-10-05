@@ -5,19 +5,25 @@
 
 main section {
   padding: 20px 0;
+  h2 {
+    padding: 20px 0;
+  }
 }
+
 .home {
   position: relative;
   background-color: $color-gray;
   text-align: center;
+  h2 {
+    display: none;
+  }
   .slogan {
-    margin: 20px auto 0;
+    margin: 12px auto;
     width: 30%;
     p {
       letter-spacing: 3px;
       color: $color-text2;
-      font-size: 42px;
-
+      font-size: 39px;
       &:nth-child(2) {
         letter-spacing: 5px;
         font-weight: 700;
@@ -26,13 +32,48 @@ main section {
       &:last-child {
         letter-spacing: 5px;
         font-weight: 700;
-        font-size: 55px;
+        font-size: 52px;
       }
       span {
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
       }
     }
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    a {
+      font-weight: 600;
+      color: $color-secondary;
+      border: 2px solid $color-secondary;
+      border-radius: 9999px;
+      display: inline-block;
+      width: 140px;
+      height: 48px;
+      line-height: 48px;
+      img {
+        width: 16px;
+      }
+      &:hover img {
+        animation: arrow 0.8s ease infinite;
+      }
+      @keyframes arrow {
+        0% {
+          transform: translate(0px);
+        }
+        50% {
+          transform: translate(4px);
+        }
+        100% {
+          transform: translate(0px);
+        }
+      }
+    }
+  }
+  .profile-img {
+    padding: 20px 0 8px;
   }
   .down-btn {
     width: 80px;
@@ -43,10 +84,9 @@ main section {
     left: 48%;
     bottom: 0;
     z-index: 10;
-    transition: 0.4s;
+    transition: all 0.3s;
     a {
       padding: 25px 20px 36px;
-
       img {
         position: relative;
         top: 29%;
@@ -71,41 +111,89 @@ main section {
 
 .about {
   position: relative;
-  height: 100vh;
-  margin-top: 70px;
+  padding: 50px 0 100px;
+  .info {
+    margin: 20px 0;
+    p {
+      font-size: 18px;
+      padding-bottom: 6px;
+    }
+  }
+  .info-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    .box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 5px 15px 70px 0px rgb(0 0 0 / 8%);
+      border-radius: 50px;
+      margin: 0 20px;
+      padding: 30px 50px;
+      width: 270px;
+      transition: all 0.3s;
+      .circle {
+        position: absolute;
+        left: 30px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $color-gray;
+      }
+      .title {
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        color: $color-text2;
+      }
+      .text {
+        padding: 25px 15px 65px;
+        p {
+          padding-bottom: 5px;
+          text-align: start;
+          line-height: 20px;
+        }
+      }
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
 }
 
 .skill {
   position: relative;
+  padding: 100px 0 50px;
   .animation {
-    padding: 150px 0;
+    padding: 110px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 58px 43px;
+    gap: 60px;
     .chart {
       margin: 0 20px;
       position: relative;
       h3 {
         position: absolute;
+        top: 43%;
         left: 50%;
-        top: 44%;
         transform: translate(-50%, -50%);
       }
       p {
-        margin-top: 8px;
+        margin-top: 10px;
         font-family: "Montserrat", sans-serif;
       }
       svg {
         width: 220px;
         height: 220px;
         fill: transparent;
-        stroke-width: 10px;
+        stroke-width: 9px;
         stroke-dasharray: 630;
         stroke-dashoffset: 630;
+        stroke-linecap: round;
         stroke: $color-primary;
         transform: rotate(-90deg);
-        stroke-linecap: round;
       }
     }
   }
@@ -114,7 +202,7 @@ main section {
     background: url(../../img/image.svg) no-repeat center;
     background-size: 115% 100%;
     position: absolute;
-    top: 95%;
+    top: 96%;
     left: 0;
     width: 100%;
     padding-top: 31%;
@@ -155,20 +243,36 @@ main section {
   background: url(../../img/footer-bg.png) no-repeat center;
   padding: 0;
   .contact-wrap {
+    position: relative;
     display: flex;
     align-items: center;
     margin: 100px 0;
     img {
       position: relative;
       left: -80px;
+      animation: ding 1s ease infinite;
+      @keyframes ding {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      &:hover{
+        animation-play-state: paused;
+      }
     }
-    .info {
+    .me {
       position: relative;
       left: 200px;
       h2 {
         font-size: 42px;
         font-weight: 500;
-        color: $color-white;
+        color: #fff;
         margin-bottom: 50px;
       }
       p {
@@ -180,5 +284,18 @@ main section {
         }
       }
     }
+  }
+  .box-image {
+    position: absolute;
+    width: 200px;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+  }
+  .money-image {
+    position: absolute;
+    width: 200px;
+    bottom: 80px;
+    right: 150px;
   }
 }
