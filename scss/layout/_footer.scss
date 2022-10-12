@@ -20,6 +20,7 @@
     }
     &:hover {
       transform: translateY(-15%);
+      background-color: $color-secondary;
     }
   }
   #back-to-top.visible {

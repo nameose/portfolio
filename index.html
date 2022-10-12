@@ -1,253 +1,440 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>오성의 포트폴리오</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div id="wrap">
-      <header id="header">
-        <div class="header-wrap" id="top">
-          <div class="logo">
-            <a href="index.html">logo</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>오성의 포트폴리오</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="header-wrap" id="top">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo-star.png" alt="로고 첫 번째 글자" />
+            <img src="img/logo-h.png" alt="로고 두 번째 글자" />
+            <img src="img/logo-highlight.png" alt="로고 세 번째 글자" />
+          </a>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="home" id="home">
+        <div class="container">
+          <h2>home</h2>
+          <div class="slogan">
+            <p>끊임없이 강화하는</p>
+            <p><span>5</span>성급 퍼블리셔</p>
+            <p><span>오성의</span>입니다</p>
           </div>
-          <div class="nav">
+          <div class="link">
             <ul>
-              <li><a href="#home">home</a></li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#project">project</a></li>
-              <li><a href="#contact">contact</a></li>
+              <li>
+                <a href="javascript:;">
+                  <span>이력서 보기</span>
+                  <img src="img/arrow_yellow.png" alt="오른쪽 화살표" />
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <span>깃허브 보기</span>
+                  <img src="img/arrow_yellow.png" alt="오른쪽 화살표" />
+                </a>
+              </li>
             </ul>
           </div>
+          <!-- <img src="img/star.png" alt="별 배경" class="star-bg" /> -->
+          <img src="img/profile-web1.png" alt="오성의 사진" class="profile-img" />
+          <img src="img/image.svg" alt="그림자 이미지" class="shadow-img" />
+          <div class="down-btn">
+            <a href="#about">
+              <img src="img/arrow_downward.png" alt="아래 버튼" />
+            </a>
+          </div>
         </div>
-      </header>
-      <main id="main">
-        <section class="home" id="home">
+      </section>
+      <section id="about">
+        <div class="about">
           <div class="container">
-            <h2>home</h2>
-            <div class="slogan">
-              <p>끊임없이 강화하는</p>
-              <p><span>5</span>성급 퍼블리셔</p>
-              <p>오성의입니다</p>
+            <h2>about me</h2>
+            <div class="info">
+              <p>안녕하세요!</p>
+              <p>끈기와 열정으로 성장하는 <b>오성의</b>입니다.</p>
+            </div>
+            <div class="info-wrap">
+              <div class="info-box">
+                <!-- <div class="circle"></div> -->
+                <h3 class="title">profile</h3>
+                <div class="text">
+                  <p>오성의</p>
+                  <p>1996.05.30</p>
+                  <p>서울시 서초구 거주</p>
+                  <br />
+                  <p>010.9589.5603</p>
+                  <p>34715603@naver.com</p>
+                </div>
+              </div>
+              <div class="info-box">
+                <!-- <div class="circle"></div> -->
+                <h3 class="title">education</h3>
+                <div class="text">
+                  <p>2022.10</p>
+                  <p>UI/UX 반응형 웹디자인&웹퍼블리셔 양성과정 수료</p>
+                  <br />
+                  <p>2020.02</p>
+                  <p>경기대학교 식품생물공학과 졸업</p>
+                </div>
+              </div>
+              <div class="info-box">
+                <!-- <div class="circle"></div> -->
+                <h3 class="title">license</h3>
+                <div class="text">
+                  <p>2021.07</p>
+                  <p>컴퓨터 활용능력 2급</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="container">
+            <h2>skills</h2>
+            <div class="animation">
+              <div class="chart">
+                <h3 data-num="90">0%</h3>
+                <svg>
+                  <circle cx="110" cy="110" r="100"></circle>
+                </svg>
+                <p>HTML/CSS</p>
+              </div>
+              <div class="chart">
+                <h3 data-num="70">0%</h3>
+                <svg>
+                  <circle cx="110" cy="110" r="100"></circle>
+                </svg>
+                <p>JavaScript</p>
+              </div>
+              <div class="chart">
+                <h3 data-num="70">0%</h3>
+                <svg>
+                  <circle cx="110" cy="110" r="100"></circle>
+                </svg>
+                <p>jQuery</p>
+              </div>
+              <div class="chart">
+                <h3 data-num="75">0%</h3>
+                <svg>
+                  <circle cx="110" cy="110" r="100"></circle>
+                </svg>
+                <p>React</p>
+              </div>
+              <div class="chart">
+                <h3 data-num="90">0%</h3>
+                <svg>
+                  <circle cx="110" cy="110" r="100"></circle>
+                </svg>
+                <p>SCSS</p>
+              </div>
+              <div class="chart">
+                <h3 data-num="80">0%</h3>
+                <svg>
+                  <circle cx="110" cy="110" r="100"></circle>
+                </svg>
+                <p>Figma</p>
+              </div>
+              <div class="chart">
+                <h3 data-num="70">0%</h3>
+                <svg>
+                  <circle cx="110" cy="110" r="100"></circle>
+                </svg>
+                <p>Photoshop</p>
+              </div>
+              <div class="chart">
+                <h3 data-num="70">0%</h3>
+                <svg>
+                  <circle cx="110" cy="110" r="100"></circle>
+                </svg>
+                <p>Illustrator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="img/image.svg" alt="그림자 이미지" class="shadow-img" />
+      </section>
+      <section class="projects" id="project">
+        <div class="container">
+          <h2>projects</h2>
+          <div class="project1">
+            <div class="container">
+              <div class="project-wrap">
+                <img src="img/mockup_pc.png" alt="서초구청 프로젝트 사이트 PC ver." class="project-img" />
+                <div class="project-text">
+                  <div class="project-title">
+                    <p>PROJECT 01 .</p>
+                    <p>서초구청<span>#적응형</span></p>
+                  </div>
+                  <div class="project-explain">
+                    <p>
+                      첫 번째로 제작한 웹사이트입니다.<br />
+                      관공서 사이트를 클론 코딩하여 구현하였습니다. 와이어
+                      프레임 작업을 통해 구조를 파악하고, 공부했던 코드들을
+                      직접 적용해 보며 더 이해할 수 있게 된 작업이었습니다.<br />
+                      웹 접근성과 표준성을 준수하여 제작하였습니다.
+                    </p>
+                  </div>
+                  <div class="project-bottom">
+                    <p>제작 기간<span>3주</span></p>
+                    <p>
+                      사용 프로그램<span>HTML / CSS / JavaScript / jQuery</span>
+                    </p>
+                  </div>
+                  <div class="project-link">
+                    <ul>
+                      <li>
+                        <a href="javascript:;">
+                          <span>사이트 보기</span>
+                          <img src="img/arrow_yellow.png" alt="오른쪽 화살표" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span>깃허브 보기</span>
+                          <img src="img/arrow_yellow.png" alt="오른쪽 화살표" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project2">
+            <div class="container">
+              <div class="project-wrap">
+                <img src="img/mockup_pc.png" alt="한솥도시락 프로젝트 사이트 PC ver." class="project-img" />
+                <div class="project-text">
+                  <div class="project-title">
+                    <p>PROJECT 02 .</p>
+                    <p>한솥도시락<span>#반응형</span></p>
+                  </div>
+                  <div class="project-explain">
+                    <p>
+                      두 번째로 제작한 웹사이트입니다.<br />
+                      한솥도시락 사이트를 클론 코딩하여 구현하였습니다.<br />
+                      또한 기존 사이트에서 아쉬웠던 GNB 부분을
+                      리디자인하였습니다. 첫 프로젝트에 비해 HTML, CSS에
+                      익숙해져 비교적 수월하게 코드를 짤 수 있었습니다.<br />
+                      웹 접근성과 표준성을 준수하여 제작하였습니다.
+                    </p>
+                  </div>
+                  <div class="project-bottom">
+                    <p>제작 기간<span>2주</span></p>
+                    <p>사용 프로그램<span>HTML / CSS / JavaScript / jQuery</span></p>
+                  </div>
+                  <div class="project-link">
+                    <ul>
+                      <li>
+                        <a href="javascript:;">
+                          <span>사이트 보기</span>
+                          <img src="img/arrow_yellow.png" alt="오른쪽 화살표" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span>깃허브 보기</span>
+                          <img src="img/arrow_yellow.png" alt="오른쪽 화살표" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project3">
+            <div class="container">
+              <div class="project-wrap">
+                <img src="img/mockup_pc.png" alt="빅히트 뮤직 프로젝트 사이트 PC ver." class="project-img" />
+                <div class="project-text">
+                  <div class="project-title">
+                    <p>PROJECT 03 .</p>
+                    <p>빅히트 뮤직<span>#반응형</span></p>
+                  </div>
+                  <div class="project-explain">
+                    <p>
+                      세 번째로 제작한 웹사이트입니다.<br />
+                      SCSS를 사용하여 작업하였습니다. 기존 CSS보다 편리하고
+                      효율적으로 코드를 짤 수 있다는 것을 알 수 있었습니다.
+                      반응형 제작 시 CSS보다 직관적으로 미디어 쿼리를 작성할
+                      수 있다는 것이 큰 장점이었습니다.<br />
+                      웹 접근성과 표준성을 준수하여 제작하였습니다.
+                    </p>
+                  </div>
+                  <div class="project-bottom">
+                    <p>제작 기간<span>1주</span></p>
+                    <p>
+                      사용 프로그램<span>HTML / CSS / JavaScript / jQuery</span>
+                    </p>
+                  </div>
+                  <div class="project-link">
+                    <ul>
+                      <li>
+                        <a href="javascript:;">
+                          <span>사이트 보기</span>
+                          <img src="img/arrow_yellow.png" alt="오른쪽 화살표" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span>깃허브 보기</span>
+                          <img src="img/arrow_yellow.png" alt="오른쪽 화살표" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project4">
+            <div class="container">
+              <div class="project-wrap">
+                <img src="img/mockup_pc.png" alt="React 프로젝트 사이트 PC ver." class="project-img" />
+                <div class="project-text">
+                  <div class="project-title">
+                    <p>PROJECT 04 .</p>
+                    <p>React 쇼핑몰<span>#반응형</span></p>
+                  </div>
+                  <div class="project-explain">
+                    <p>
+                      네 번째로 제작한 웹사이트입니다.<br />
+                      React를 사용하여 작업하였습니다. API를 활용하여 데이터를
+                      가져와 제 사이트에 적용시켰습니다. 기존에 작업하던
+                      방식과 다른 스크립트 기반의 생소한 언어이다보니 처음에는
+                      굉장히 어렵게 느껴졌습니다. 개념을 차근차근 배우면서 좀
+                      더 익숙해질 수 있었습니다. 어려운만큼 신기함도 많이
+                      느꼈던 작업이었습니다. <br />
+                      웹 접근성과 표준성을 준수하여 제작하였습니다.
+                    </p>
+                  </div>
+                  <div class="project-bottom">
+                    <p>제작 기간<span>2주</span></p>
+                    <p>사용 프로그램<span>React / CSS</span></p>
+                  </div>
+                  <div class="project-link">
+                    <ul>
+                      <li>
+                        <a href="javascript:;">
+                          <span>사이트 보기</span>
+                          <img src="img/arrow_yellow.png" alt="오른쪽 화살표" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span>깃허브 보기</span>
+                          <img src="img/arrow_yellow.png" alt="오른쪽 화살표" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project5">
+            <div class="container">
+              <div class="project-wrap">
+                <img src="img/mockup_mobile.png" alt="꿀주차 프로토타입" class="project-img" />
+                <div class="project-text">
+                  <div class="project-title">
+                    <p>TEAM PROJECT .</p>
+                    <p>꿀주차<span>#UI UX</span></p>
+                  </div>
+                  <div class="project-explain">
+                    <p>
+                      팀원들과 협업하여 제작한 프로토타입 앱입니다.<br />
+                      앱의 주내용은 사용자에게 주차장 정보와 혜택을 제공하는
+                      주차 기반 서비스입니다. 2030을 타깃으로 하였고, 평소
+                      주차에 불편을 겪고 있는 운전자들이 니즈를 충족하면서
+                      쉽고 편리하게 사용할 수 있는 앱을 제작하였습니다.
+                    </p>
+                  </div>
+                  <div class="project-bottom">
+                    <p>제작 기간<span>3주</span></p>
+                    <p>사용 프로그램<span>Figma</span></p>
+                  </div>
+                  <div class="project-link">
+                    <ul>
+                      <li>
+                        <a href="javascript:;">
+                          <span>프로토타입 보기</span>
+                          <img src="img/arrow_yellow.png" alt="오른쪽 화살표" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span>기획서 보기</span>
+                          <img src="img/arrow_yellow.png" alt="오른쪽 화살표" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-wrap">
+            <img src="img/contact-bg.png" alt="배경" class="contact-bg">
+            <img src="img/phone-yellow.png" alt="핸드폰 이미지" class="contact-img" />
+            <div class="contact-text">
+              <h2>contact me!</h2>
+              <p>꾸준히 노력하는 성장형 퍼블리셔!</p>
+              <p>제가 궁금하신가요?</p>
             </div>
             <div class="link">
-              <a href="javascript:;">
-                <span>이력서 보기</span>
-                <img src="./img/arrow.png" alt="오른쪽 화살표" />
-              </a>
-              <a href="javascript:;">
-                <span>깃허브 보기</span>
-                <img src="./img/arrow.png" alt="오른쪽 화살표" />
-              </a>
-            </div>
-            <img src="img/profile-web1.png" alt="오성의" class="profile-img" />
-            <div class="down-btn">
-              <a href="#about">
-                <img src="img/arrow_downward.png" alt="아래 버튼" />
-              </a>
-            </div>
-          </div>
-        </section>
-        <section id="about">
-          <div class="about">
-            <div class="container">
-              <h2>about me</h2>
-              <div class="info">
-                <p>안녕하세요!</p>
-                <p>끈기와 열정으로 성장하는 오성의입니다.</p>
-              </div>
-              <div class="info-wrap">
-                <div class="box">
-                  <div class="circle"></div>
-                  <h3 class="title">profile</h3>
-                  <div class="text">
-                    <p>오성의</p>
-                    <p>1996.05.30</p>
-                    <p>서울시 서초구 거주</p>
-                    <br />
-                    <p>010.9589.5603</p>
-                    <p>34715603@naver.com</p>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="circle"></div>
-                  <h3 class="title">education</h3>
-                  <div class="text">
-                    <p>2022.10</p>
-                    <p>UI/UX 반응형 웹디자인&웹퍼블리셔 양성과정 수료</p>
-                    <br />
-                    <p>2020.02</p>
-                    <p>경기대학교 식품생물공학과 졸업</p>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="circle"></div>
-                  <h3 class="title">license</h3>
-                  <div class="text">
-                    <p>2021.07</p>
-                    <p>컴퓨터 활용능력 2급</p>
-                  </div>
-                </div>
-              </div>
+              <ul>
+                <li>
+                  <a href="javascript:;">
+                    <span>이력서 보기</span>
+                    <img src="img/arrow_white.png" alt="오른쪽 화살표" />
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <span>깃허브 보기</span>
+                    <img src="img/arrow_white.png" alt="오른쪽 화살표" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="skill">
-            <div class="container">
-              <h2>skills</h2>
-              <div class="animation">
-                <div class="chart">
-                  <h3 data-num="90">0%</h3>
-                  <svg>
-                    <circle cx="110" cy="110" r="100"></circle>
-                  </svg>
-                  <p>HTML/CSS</p>
-                </div>
-                <div class="chart">
-                  <h3 data-num="70">0%</h3>
-                  <svg>
-                    <circle cx="110" cy="110" r="100"></circle>
-                  </svg>
-                  <p>JavaScript</p>
-                </div>
-                <div class="chart">
-                  <h3 data-num="70">0%</h3>
-                  <svg>
-                    <circle cx="110" cy="110" r="100"></circle>
-                  </svg>
-                  <p>jQuery</p>
-                </div>
-                <div class="chart">
-                  <h3 data-num="75">0%</h3>
-                  <svg>
-                    <circle cx="110" cy="110" r="100"></circle>
-                  </svg>
-                  <p>React</p>
-                </div>
-                <div class="chart">
-                  <h3 data-num="90">0%</h3>
-                  <svg>
-                    <circle cx="110" cy="110" r="100"></circle>
-                  </svg>
-                  <p>SCSS</p>
-                </div>
-                <div class="chart">
-                  <h3 data-num="80">0%</h3>
-                  <svg>
-                    <circle cx="110" cy="110" r="100"></circle>
-                  </svg>
-                  <p>Figma</p>
-                </div>
-                <div class="chart">
-                  <h3 data-num="70">0%</h3>
-                  <svg>
-                    <circle cx="110" cy="110" r="100"></circle>
-                  </svg>
-                  <p>Photoshop</p>
-                </div>
-                <div class="chart">
-                  <h3 data-num="70">0%</h3>
-                  <svg>
-                    <circle cx="110" cy="110" r="100"></circle>
-                  </svg>
-                  <p>Illustrator</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="projects" id="project">
-          <div class="container">
-            <h2>projects</h2>
-            <div class="project1">
-              <div class="container">
-                <div class="project-wrap">
-                  <img
-                    src="img/mockup/none.png"
-                    alt="서초구청 프로젝트 사이트"
-                  />
-                  <div class="text">
-                    <p>서초구청</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project2">
-              <div class="container">
-                <div class="project-wrap">
-                  <img
-                    src="img/mockup/none.png"
-                    alt="한솥도시락 프로젝트 사이트"
-                  />
-                  <div class="text">
-                    <p>한솥도시락</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project3">
-              <div class="container">
-                <div class="project-wrap">
-                  <img
-                    src="img/mockup/none.png"
-                    alt="빅히트 뮤직 프로젝트 사이트"
-                  />
-                  <div class="text">
-                    <p>빅히트 뮤직</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project4">
-              <div class="container">
-                <div class="project-wrap">
-                  <img src="img/mockup/none.png" alt="리액트 프로젝트 사이트" />
-                  <div class="text">
-                    <p>리액트</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project5">
-              <div class="container">
-                <div class="project-wrap">
-                  <img src="img/mockup/none.png" alt="꿀주차 프로토타입" />
-                  <div class="text">
-                    <p>꿀주차</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="contact" id="contact">
-          <div class="container">
-            <div class="contact-wrap">
-              <img src="img/phone-yellow.png" alt="소개" />
-              <div class="me">
-                <h2>contact me!</h2>
-                <p>꾸준히 노력하는 성장형 퍼블리셔!</p>
-                <p>제가 궁금하신가요?</p>
-              </div>
-            </div>
-          </div>
-          <img src="img/game-box2.png" alt="상자 이미지" class="box-image" />
-          <img
-            src="img/game-money.png"
-            alt="돈주머니 이미지"
-            class="money-image"
-          />
-        </section>
-      </main>
-      <footer id="footer">
-        <a href="#top" id="back-to-top">
-          <img src="img/expand_less.png" alt="위 버튼" />
-        </a>
-      </footer>
-    </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <a href="#top" id="back-to-top">
+        <img src="img/expand_less.png" alt="위 버튼" />
+      </a>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
 </html>
