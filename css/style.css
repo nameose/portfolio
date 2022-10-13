@@ -223,8 +223,9 @@ main section h2 {
 }
 .home .star-bg {
   position: absolute;
-  right: 20%;
-  top: 52%;
+  left: 50%;
+  top: 66%;
+  transform: translate(-50%, -50%);
 }
 .home .profile-img {
   position: relative;
@@ -462,6 +463,9 @@ main section h2 {
   -webkit-animation: arrow 0.7s ease infinite;
           animation: arrow 0.7s ease infinite;
 }
+.projects .project1 {
+  display: none;
+}
 .projects .project2 .project-wrap {
   flex-direction: row-reverse;
 }
@@ -470,16 +474,14 @@ main section h2 {
 }
 .projects .project4 .project-wrap {
   flex-direction: row-reverse;
-}
-.projects .project5 .project-pc {
-  width: auto;
-  height: 600px;
+  display: none;
 }
 .projects .mockup {
   position: relative;
-  width: 303px;
-  height: 557px;
-  border-radius: 40px;
+  top: 10px;
+  width: 300px;
+  height: 500px;
+  border-radius: 15% 8% 0% 0%;
   overflow: hidden;
   background: url(phone.png) no-repeat;
   background-size: 100% 100%;
@@ -487,17 +489,18 @@ main section h2 {
 .projects .crop {
   position: absolute;
   overflow: hidden;
-  width: 267px;
-  height: 540px;
+  width: 285px;
+  height: 518px;
   left: 15px;
-  top: 15px;
-  border-radius: 40px;
+  top: -25px;
+  border-radius: 12% 12% 8% 8%;
 }
 .projects iframe {
-  display: block;
   position: absolute;
-  width: 271px;
-  height: 588px;
+  width: 386px;
+  height: 718px;
+  left: -48px;
+  top: -63px;
 }
 
 .contact {

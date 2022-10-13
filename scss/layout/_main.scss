@@ -83,8 +83,9 @@ main section {
   }
   .star-bg {
     position: absolute;
-    right: 20%;
-    top: 52%;
+    left: 50%;
+    top: 66%;
+    transform: translate(-50%, -50%);
   }
   .profile-img {
     position: relative;
@@ -149,14 +150,6 @@ main section {
         padding: 30px 50px;
         width: 270px;
         transition: all 0.3s;
-        // .circle {
-        //   position: absolute;
-        //   left: 30px;
-        //   width: 20px;
-        //   height: 20px;
-        //   border-radius: 50%;
-        //   background-color: $color-gray;
-        // }
         .title {
           padding: 20px;
           font-size: 20px;
@@ -333,24 +326,25 @@ main section {
       }
     }
   }
+  .project1 {
+    display: none;
+  }
   .project2 .project-wrap {
     flex-direction: row-reverse;
   }
-  .project3 .project-view{
+  .project3 .project-view {
     height: 100%;
   }
   .project4 .project-wrap {
     flex-direction: row-reverse;
-  }
-  .project5 .project-pc {
-    width: auto;
-    height: 600px;
+    display: none;
   }
   .mockup {
     position: relative;
-    width: 303px;
-    height: 557px;
-    border-radius: 40px;
+    top: 10px;
+    width: 300px;
+    height: 500px;
+    border-radius: 15% 8% 0% 0%;
     overflow: hidden;
     background: url(phone.png) no-repeat;
     background-size: 100% 100%;
@@ -358,18 +352,19 @@ main section {
   .crop {
     position: absolute;
     overflow: hidden;
-    width: 267px;
-    height: 540px;
+    width: 285px;
+    height: 518px;
     left: 15px;
-    top: 15px;
-    border-radius:40px;
+    top: -25px;
+    border-radius: 12% 12% 8% 8%;
   }
-      iframe{
-          display: block;
-          position: absolute;
-          width:  271px;
-          height: 588px;
-      }
+  iframe {
+    position: absolute;
+    width: 386px;
+    height: 718px;
+    left: -48px;
+    top: -63px;
+  }
 }
 
 .contact {
