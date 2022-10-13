@@ -229,7 +229,7 @@ main section {
   position: relative;
   margin-top: 50px;
   h2 {
-    margin: 50px 0;
+    padding: 50px 0;
     font-family: "Montserrat", sans-serif;
   }
   .project-wrap {
@@ -237,11 +237,24 @@ main section {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 100px 0;
-    margin: 25px 0;
+    padding: 150px 0;
+    margin: 50px 0;
+    gap: 10px;
     .project-img {
-      width: 600px;
-      height: auto;
+      position: relative;
+      border-radius: 0px 0px 15px 15px;
+      overflow: hidden;
+      .project-pc {
+        position: relative;
+        width: 600px;
+        height: auto;
+      }
+      .project-view {
+        position: absolute;
+        width: 600px;
+        top: 35px;
+        right: 0px;
+      }
     }
     .project-text {
       position: relative;
@@ -305,7 +318,7 @@ main section {
         ul {
           display: flex;
           align-items: center;
-          gap: 45px;
+          gap: 35px;
           li a {
             color: $color-secondary;
             img {
@@ -323,19 +336,45 @@ main section {
   .project2 .project-wrap {
     flex-direction: row-reverse;
   }
+  .project3 .project-view{
+    height: 100%;
+  }
   .project4 .project-wrap {
     flex-direction: row-reverse;
   }
-  .project5 .project-img{
+  .project5 .project-pc {
     width: auto;
     height: 600px;
   }
+  .mockup {
+    position: relative;
+    width: 303px;
+    height: 557px;
+    border-radius: 40px;
+    overflow: hidden;
+    background: url(phone.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .crop {
+    position: absolute;
+    overflow: hidden;
+    width: 267px;
+    height: 540px;
+    left: 15px;
+    top: 15px;
+    border-radius:40px;
+  }
+      iframe{
+          display: block;
+          position: absolute;
+          width:  271px;
+          height: 588px;
+      }
 }
 
 .contact {
   position: relative;
   height: 100%;
-  background: url(../../img/footer-bg.png) no-repeat center;
   padding: 0;
   .contact-wrap {
     position: relative;
