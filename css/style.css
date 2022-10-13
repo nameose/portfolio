@@ -469,6 +469,9 @@ main section h2 {
 .projects .project2 .project-wrap {
   flex-direction: row-reverse;
 }
+.projects .project3 {
+  display: none;
+}
 .projects .project3 .project-view {
   height: 100%;
 }
@@ -478,7 +481,7 @@ main section h2 {
 }
 .projects .mockup {
   position: relative;
-  top: 10px;
+  top: 15px;
   width: 300px;
   height: 500px;
   border-radius: 15% 8% 0% 0%;
@@ -513,6 +516,7 @@ main section h2 {
   display: flex;
   align-items: center;
   margin: 100px 0;
+  padding-top: 200px;
 }
 .contact .contact-wrap .contact-bg {
   position: absolute;
@@ -523,6 +527,7 @@ main section h2 {
 .contact .contact-wrap .contact-img {
   position: relative;
   left: -80px;
+  bottom: 100px;
   cursor: pointer;
   -webkit-animation: ding 1.5s ease infinite;
           animation: ding 1.5s ease infinite;
@@ -556,6 +561,7 @@ main section h2 {
 .contact .contact-wrap .contact-text {
   position: relative;
   left: 300px;
+  bottom: 100px;
 }
 .contact .contact-wrap .contact-text h2 {
   font-weight: 500;
@@ -607,6 +613,14 @@ main section h2 {
 
 #footer {
   position: relative;
+  height: 100px;
+  line-height: 100px;
+  background-color: #f1f1f1;
+}
+#footer .check {
+  position: relative;
+  text-align: center;
+  bottom: 0;
 }
 #footer #back-to-top {
   position: fixed;

@@ -332,8 +332,11 @@ main section {
   .project2 .project-wrap {
     flex-direction: row-reverse;
   }
-  .project3 .project-view {
-    height: 100%;
+  .project3 {
+    display: none;
+    .project-view {
+      height: 100%;
+    }
   }
   .project4 .project-wrap {
     flex-direction: row-reverse;
@@ -341,7 +344,7 @@ main section {
   }
   .mockup {
     position: relative;
-    top: 10px;
+    top: 15px;
     width: 300px;
     height: 500px;
     border-radius: 15% 8% 0% 0%;
@@ -376,6 +379,7 @@ main section {
     display: flex;
     align-items: center;
     margin: 100px 0;
+    padding-top: 200px;
     .contact-bg {
       position: absolute;
       left: 50%;
@@ -385,6 +389,7 @@ main section {
     .contact-img {
       position: relative;
       left: -80px;
+      bottom: 100px;
       cursor: pointer;
       animation: ding 1.5s ease infinite;
       @keyframes ding {
@@ -405,6 +410,7 @@ main section {
     .contact-text {
       position: relative;
       left: 300px;
+      bottom: 100px;
       h2 {
         font-weight: 500;
         font-size: 42px;
