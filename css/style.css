@@ -204,7 +204,7 @@ main section h2 {
     transform: translate(0px);
   }
   50% {
-    transform: translate(2px);
+    transform: translate(3px);
   }
   100% {
     transform: translate(0px);
@@ -215,7 +215,7 @@ main section h2 {
     transform: translate(0px);
   }
   50% {
-    transform: translate(2px);
+    transform: translate(3px);
   }
   100% {
     transform: translate(0px);
@@ -463,21 +463,11 @@ main section h2 {
   -webkit-animation: arrow 0.7s ease infinite;
           animation: arrow 0.7s ease infinite;
 }
-.projects .project1 {
-  display: none;
-}
 .projects .project2 .project-wrap {
   flex-direction: row-reverse;
 }
-.projects .project3 {
-  display: none;
-}
-.projects .project3 .project-view {
+.projects .project2 .project-wrap .project-view {
   height: 100%;
-}
-.projects .project4 .project-wrap {
-  flex-direction: row-reverse;
-  display: none;
 }
 .projects .mockup {
   position: relative;
@@ -516,7 +506,6 @@ main section h2 {
   display: flex;
   align-items: center;
   margin: 100px 0;
-  padding-top: 200px;
 }
 .contact .contact-wrap .contact-bg {
   position: absolute;
@@ -527,7 +516,6 @@ main section h2 {
 .contact .contact-wrap .contact-img {
   position: relative;
   left: -80px;
-  bottom: 100px;
   cursor: pointer;
   -webkit-animation: ding 1.5s ease infinite;
           animation: ding 1.5s ease infinite;
@@ -561,7 +549,6 @@ main section h2 {
 .contact .contact-wrap .contact-text {
   position: relative;
   left: 300px;
-  bottom: 100px;
 }
 .contact .contact-wrap .contact-text h2 {
   font-weight: 500;
