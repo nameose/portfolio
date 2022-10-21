@@ -469,31 +469,19 @@ main section h2 {
 .projects .project2 .project-wrap .project-view {
   height: 100%;
 }
-.projects .mockup {
-  position: relative;
-  top: 15px;
-  width: 300px;
-  height: 500px;
-  border-radius: 15% 8% 0% 0%;
-  overflow: hidden;
-  background: url(phone.png) no-repeat;
-  background-size: 100% 100%;
+.projects .project3 .project-wrap {
+  display: flex;
+  justify-content: space-around;
 }
-.projects .crop {
-  position: absolute;
-  overflow: hidden;
-  width: 285px;
-  height: 518px;
-  left: 15px;
-  top: -25px;
-  border-radius: 12% 12% 8% 8%;
+.projects .project3 .project-wrap .project-img a {
+  display: inline-block;
 }
-.projects iframe {
-  position: absolute;
-  width: 386px;
-  height: 718px;
-  left: -48px;
-  top: -63px;
+.projects .project3 .project-wrap .project-img a:first-child {
+  margin-right: 50px;
+}
+.projects .project3 .project-wrap .project-img a img {
+  display: block;
+  width: 260px;
 }
 
 .contact {
@@ -516,7 +504,6 @@ main section h2 {
 .contact .contact-wrap .contact-img {
   position: relative;
   left: -80px;
-  cursor: pointer;
   -webkit-animation: ding 1.5s ease infinite;
           animation: ding 1.5s ease infinite;
 }

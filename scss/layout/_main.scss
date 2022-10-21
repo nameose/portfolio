@@ -332,31 +332,19 @@ main section {
       height: 100%;
     }
   }
-  .mockup {
-    position: relative;
-    top: 15px;
-    width: 300px;
-    height: 500px;
-    border-radius: 15% 8% 0% 0%;
-    overflow: hidden;
-    background: url(phone.png) no-repeat;
-    background-size: 100% 100%;
-  }
-  .crop {
-    position: absolute;
-    overflow: hidden;
-    width: 285px;
-    height: 518px;
-    left: 15px;
-    top: -25px;
-    border-radius: 12% 12% 8% 8%;
-  }
-  iframe {
-    position: absolute;
-    width: 386px;
-    height: 718px;
-    left: -48px;
-    top: -63px;
+  .project3 .project-wrap {
+    display: flex;
+    justify-content: space-around;
+    .project-img a {
+      display: inline-block;
+      &:first-child {
+        margin-right: 50px;
+      }
+      img {
+        display: block;
+        width: 260px;
+      }
+    }
   }
 }
 
@@ -378,7 +366,6 @@ main section {
     .contact-img {
       position: relative;
       left: -80px;
-      cursor: pointer;
       animation: ding 1.5s ease infinite;
       @keyframes ding {
         0% {
