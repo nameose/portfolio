@@ -249,101 +249,101 @@ main section {
         right: 0px;
       }
     }
-    .project-text {
-      position: relative;
+  }
+  .project-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    .project-title {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 25px;
-      .project-title {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        p {
-          &:nth-child(1) {
-            font-family: "Montserrat", sans-serif;
-          }
-          &:nth-child(2) {
-            display: flex;
-            align-items: center;
-            font-size: 24px;
-            color: $color-text2;
-            span {
-              font-size: 16px;
-              color: $color-text1;
-              margin-left: 15px;
-            }
+      gap: 15px;
+      p {
+        &:nth-child(1) {
+          font-family: "Montserrat", sans-serif;
+        }
+        &:nth-child(2) {
+          display: flex;
+          align-items: center;
+          font-size: 24px;
+          color: $color-text2;
+          span {
+            font-size: 16px;
+            color: $color-text1;
+            margin-left: 15px;
           }
         }
       }
-      .project-explain {
-        width: 380px;
-        p {
-          text-align: start;
-          line-height: 23px;
-        }
+    }
+    .project-explain {
+      width: 380px;
+      p {
+        text-align: start;
+        line-height: 23px;
       }
-      .project-bottom {
-        padding-bottom: 30px;
-        border-bottom: 1px solid #ccc;
-        width: 100%;
-        p {
-          text-align: start;
-          font-weight: 600;
-          &:nth-child(1) {
-            margin-bottom: 5px;
-            span {
-              letter-spacing: 1px;
-              font-weight: 400;
-              margin-left: 12px;
-            }
-          }
-          &:nth-child(2) span {
-            font-family: "Montserrat", sans-serif;
+    }
+    .project-bottom {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      p {
+        text-align: start;
+        font-weight: 600;
+        &:nth-child(1) {
+          margin-bottom: 5px;
+          span {
+            letter-spacing: 1px;
             font-weight: 400;
             margin-left: 12px;
           }
         }
+        &:nth-child(2) span {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          margin-left: 12px;
+        }
       }
-      .project-link {
-        padding-top: 10px;
-        ul {
-          display: flex;
-          align-items: center;
-          gap: 35px;
-          li a {
-            color: $color-secondary;
-            img {
-              width: 15px;
-              height: 11px;
-            }
-            &:hover img {
-              animation: arrow 0.7s ease infinite;
-            }
+    }
+    .project-link {
+      padding-top: 10px;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        li a {
+          color: $color-secondary;
+          img {
+            width: 15px;
+            height: 11px;
+          }
+          &:hover img {
+            animation: arrow 0.7s ease infinite;
           }
         }
       }
     }
   }
-  .project2 .project-wrap {
-    flex-direction: row-reverse;
-    .project-view {
-      height: 100%;
-    }
+}
+.project2 .project-wrap {
+  flex-direction: row-reverse;
+  .project-view {
+    height: 100%;
   }
-  .project3 .project-wrap {
-    display: flex;
-    justify-content: space-around;
-    .project-img a {
-      display: inline-block;
-      &:first-child {
-        margin-right: 50px;
-      }
-      img {
-        display: block;
-        width: 260px;
-      }
+}
+.project3 .project-wrap {
+  display: flex;
+  justify-content: space-around;
+  .project-img a {
+    display: inline-block;
+    &:first-child {
+      margin-right: 50px;
+    }
+    img {
+      display: block;
+      width: 260px;
     }
   }
 }

@@ -388,98 +388,100 @@ main section h2 {
   top: 35px;
   right: 0px;
 }
-.projects .project-wrap .project-text {
+.projects .project-text {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
 }
-.projects .project-wrap .project-text .project-title {
+.projects .project-text .project-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
 }
-.projects .project-wrap .project-text .project-title p:nth-child(1) {
+.projects .project-text .project-title p:nth-child(1) {
   font-family: "Montserrat", sans-serif;
 }
-.projects .project-wrap .project-text .project-title p:nth-child(2) {
+.projects .project-text .project-title p:nth-child(2) {
   display: flex;
   align-items: center;
   font-size: 24px;
   color: #23203F;
 }
-.projects .project-wrap .project-text .project-title p:nth-child(2) span {
+.projects .project-text .project-title p:nth-child(2) span {
   font-size: 16px;
   color: #716F87;
   margin-left: 15px;
 }
-.projects .project-wrap .project-text .project-explain {
+.projects .project-text .project-explain {
   width: 380px;
 }
-.projects .project-wrap .project-text .project-explain p {
+.projects .project-text .project-explain p {
   text-align: start;
   line-height: 23px;
 }
-.projects .project-wrap .project-text .project-bottom {
+.projects .project-text .project-bottom {
   padding-bottom: 30px;
   border-bottom: 1px solid #ccc;
   width: 100%;
 }
-.projects .project-wrap .project-text .project-bottom p {
+.projects .project-text .project-bottom p {
   text-align: start;
   font-weight: 600;
 }
-.projects .project-wrap .project-text .project-bottom p:nth-child(1) {
+.projects .project-text .project-bottom p:nth-child(1) {
   margin-bottom: 5px;
 }
-.projects .project-wrap .project-text .project-bottom p:nth-child(1) span {
+.projects .project-text .project-bottom p:nth-child(1) span {
   letter-spacing: 1px;
   font-weight: 400;
   margin-left: 12px;
 }
-.projects .project-wrap .project-text .project-bottom p:nth-child(2) span {
+.projects .project-text .project-bottom p:nth-child(2) span {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin-left: 12px;
 }
-.projects .project-wrap .project-text .project-link {
+.projects .project-text .project-link {
   padding-top: 10px;
 }
-.projects .project-wrap .project-text .project-link ul {
+.projects .project-text .project-link ul {
   display: flex;
   align-items: center;
   gap: 35px;
 }
-.projects .project-wrap .project-text .project-link ul li a {
+.projects .project-text .project-link ul li a {
   color: #F7B10B;
 }
-.projects .project-wrap .project-text .project-link ul li a img {
+.projects .project-text .project-link ul li a img {
   width: 15px;
   height: 11px;
 }
-.projects .project-wrap .project-text .project-link ul li a:hover img {
+.projects .project-text .project-link ul li a:hover img {
   -webkit-animation: arrow 0.7s ease infinite;
           animation: arrow 0.7s ease infinite;
 }
-.projects .project2 .project-wrap {
+
+.project2 .project-wrap {
   flex-direction: row-reverse;
 }
-.projects .project2 .project-wrap .project-view {
+.project2 .project-wrap .project-view {
   height: 100%;
 }
-.projects .project3 .project-wrap {
+
+.project3 .project-wrap {
   display: flex;
   justify-content: space-around;
 }
-.projects .project3 .project-wrap .project-img a {
+.project3 .project-wrap .project-img a {
   display: inline-block;
 }
-.projects .project3 .project-wrap .project-img a:first-child {
+.project3 .project-wrap .project-img a:first-child {
   margin-right: 50px;
 }
-.projects .project3 .project-wrap .project-img a img {
+.project3 .project-wrap .project-img a img {
   display: block;
   width: 260px;
 }
@@ -587,16 +589,26 @@ main section h2 {
 
 #footer {
   position: relative;
-  height: 100px;
-  line-height: 100px;
+  height: 150px;
   background-color: #f1f1f1;
 }
-#footer .check {
-  position: relative;
-  text-align: center;
-  bottom: 0;
+
+.check {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
 }
-#footer #back-to-top {
+
+.copyright {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 13px;
+}
+
+#back-to-top {
   position: fixed;
   right: 60px;
   bottom: 35px;
@@ -608,16 +620,17 @@ main section h2 {
   transition: all 0.3s ease-in-out;
   z-index: 99;
 }
-#footer #back-to-top img {
+#back-to-top img {
   position: absolute;
   left: 7px;
   top: 7px;
   width: 70%;
 }
-#footer #back-to-top:hover {
+#back-to-top:hover {
   transform: translateY(-15%);
   background-color: #F7B10B;
 }
-#footer #back-to-top.visible {
+
+#back-to-top.visible {
   opacity: 1;
 }/*# sourceMappingURL=style.css.map */
