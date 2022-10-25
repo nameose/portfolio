@@ -69,36 +69,55 @@ p {
   color: #716F87;
 }
 
+.page-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  z-index: 99;
+}
+
+.page-header.sticky {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
 .header-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 100px;
+  height: 90px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  background-color: #f1f1f1;
 }
 .header-wrap .logo {
   position: relative;
   margin-left: 200px;
   text-align: center;
+  top: 2px;
 }
 .header-wrap .logo img:nth-child(1) {
   position: relative;
   width: 28px;
   top: -1px;
-  left: 1px;
   -webkit-animation: rotate_star 4s linear infinite;
           animation: rotate_star 4s linear infinite;
 }
 .header-wrap .logo img:nth-child(2) {
   position: relative;
   width: 19px;
+  right: 5px;
 }
 .header-wrap .logo img:nth-child(3) {
   position: relative;
   width: 12px;
+  right: 10px;
 }
 @-webkit-keyframes rotate_star {
   100% {
@@ -114,14 +133,39 @@ p {
   position: relative;
   margin-right: 200px;
 }
-.header-wrap .nav ul {
+.header-wrap .nav .gnb {
   display: flex;
   gap: 50px;
 }
-.header-wrap .nav ul li a {
+.header-wrap .nav .gnb li {
+  position: relative;
+  height: 90px;
+  line-height: 90px;
+}
+.header-wrap .nav .gnb li a {
+  position: relative;
   transition: 0.3s;
 }
-.header-wrap .nav ul li a:hover {
+.header-wrap .nav .gnb li a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  margin-bottom: -10px;
+  background: #FACC5F;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+
+.nav .gnb li.on a::after,
+.nav .gnb li a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav .gnb li.on a,
+.nav .gnb li a:hover {
   color: #FACC5F;
 }
 
@@ -141,6 +185,7 @@ main section h2 {
   position: relative;
   background-color: #f1f1f1;
   text-align: center;
+  top: 90px;
 }
 .home h2 {
   display: none;
@@ -263,26 +308,27 @@ main section h2 {
   background-color: #F7B10B;
 }
 
-#about {
+.about-wrap {
   position: relative;
+  top: 90px;
 }
-#about .about {
+.about-wrap .about {
   position: relative;
   padding: 50px 0 100px;
 }
-#about .about .info {
+.about-wrap .about .info {
   margin: 10px 0;
 }
-#about .about .info p {
+.about-wrap .about .info p {
   font-size: 18px;
   padding-bottom: 6px;
 }
-#about .about .info-wrap {
+.about-wrap .about .info-wrap {
   display: flex;
   justify-content: space-between;
   margin-top: 110px;
 }
-#about .about .info-wrap .info-box {
+.about-wrap .about .info-wrap .info-box {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -293,49 +339,49 @@ main section h2 {
   width: 270px;
   transition: all 0.3s;
 }
-#about .about .info-wrap .info-box .title {
+.about-wrap .about .info-wrap .info-box .title {
   padding: 20px;
   font-size: 20px;
   font-weight: 600;
   color: #23203F;
 }
-#about .about .info-wrap .info-box .text {
+.about-wrap .about .info-wrap .info-box .text {
   padding: 25px 15px 65px;
 }
-#about .about .info-wrap .info-box .text p {
+.about-wrap .about .info-wrap .info-box .text p {
   padding-bottom: 6px;
   text-align: start;
   line-height: 23px;
 }
-#about .about .info-wrap .info-box:hover {
+.about-wrap .about .info-wrap .info-box:hover {
   transform: translateY(-15px);
 }
-#about .skill {
+.about-wrap .skill {
   position: relative;
   padding: 100px 0 50px;
 }
-#about .skill .animation {
+.about-wrap .skill .animation {
   padding: 110px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 60px;
 }
-#about .skill .animation .chart {
+.about-wrap .skill .animation .chart {
   margin: 0 20px;
   position: relative;
 }
-#about .skill .animation .chart h3 {
+.about-wrap .skill .animation .chart h3 {
   position: absolute;
   top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#about .skill .animation .chart p {
+.about-wrap .skill .animation .chart p {
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
 }
-#about .skill .animation .chart svg {
+.about-wrap .skill .animation .chart svg {
   width: 220px;
   height: 220px;
   fill: transparent;
@@ -346,7 +392,7 @@ main section h2 {
   stroke: #FACC5F;
   transform: rotate(-90deg);
 }
-#about .shadow-img {
+.about-wrap .shadow-img {
   position: absolute;
   left: 50%;
   right: 50%;
@@ -357,13 +403,18 @@ main section h2 {
 
 .projects {
   position: relative;
+  top: 90px;
   margin-top: 50px;
 }
-.projects h2 {
+.projects .project-wrap {
+  position: relative;
+  padding-top: 20px;
+}
+.projects .project-wrap h2 {
   padding: 50px 0;
   font-family: "Montserrat", sans-serif;
 }
-.projects .project-wrap {
+.projects .project-wrap .project-box {
   position: relative;
   display: flex;
   align-items: center;
@@ -372,122 +423,122 @@ main section h2 {
   margin: 50px 0;
   gap: 10px;
 }
-.projects .project-wrap .project-img {
+.projects .project-wrap .project-box .project-img {
   position: relative;
   border-radius: 0px 0px 15px 15px;
   overflow: hidden;
+  z-index: 30;
 }
-.projects .project-wrap .project-img .project-pc {
+.projects .project-wrap .project-box .project-img .project-pc {
   position: relative;
   width: 600px;
   height: auto;
 }
-.projects .project-wrap .project-img .project-view {
+.projects .project-wrap .project-box .project-img .project-view {
   position: absolute;
   width: 600px;
   top: 35px;
   right: 0px;
 }
-.projects .project-text {
+.projects .project-wrap .project-text {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
 }
-.projects .project-text .project-title {
+.projects .project-wrap .project-text .project-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
 }
-.projects .project-text .project-title p:nth-child(1) {
+.projects .project-wrap .project-text .project-title p:nth-child(1) {
   font-family: "Montserrat", sans-serif;
 }
-.projects .project-text .project-title p:nth-child(2) {
+.projects .project-wrap .project-text .project-title p:nth-child(2) {
   display: flex;
   align-items: center;
   font-size: 24px;
   color: #23203F;
 }
-.projects .project-text .project-title p:nth-child(2) span {
+.projects .project-wrap .project-text .project-title p:nth-child(2) span {
   font-size: 16px;
   color: #716F87;
   margin-left: 15px;
 }
-.projects .project-text .project-explain {
+.projects .project-wrap .project-text .project-explain {
   width: 380px;
 }
-.projects .project-text .project-explain p {
+.projects .project-wrap .project-text .project-explain p {
   text-align: start;
   line-height: 23px;
 }
-.projects .project-text .project-bottom {
+.projects .project-wrap .project-text .project-bottom {
   padding-bottom: 30px;
   border-bottom: 1px solid #ccc;
   width: 100%;
 }
-.projects .project-text .project-bottom p {
+.projects .project-wrap .project-text .project-bottom p {
   text-align: start;
   font-weight: 600;
 }
-.projects .project-text .project-bottom p:nth-child(1) {
+.projects .project-wrap .project-text .project-bottom p:nth-child(1) {
   margin-bottom: 5px;
 }
-.projects .project-text .project-bottom p:nth-child(1) span {
+.projects .project-wrap .project-text .project-bottom p:nth-child(1) span {
   letter-spacing: 1px;
   font-weight: 400;
   margin-left: 12px;
 }
-.projects .project-text .project-bottom p:nth-child(2) span {
+.projects .project-wrap .project-text .project-bottom p:nth-child(2) span {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin-left: 12px;
 }
-.projects .project-text .project-link {
+.projects .project-wrap .project-text .project-link {
   padding-top: 10px;
 }
-.projects .project-text .project-link ul {
+.projects .project-wrap .project-text .project-link ul {
   display: flex;
   align-items: center;
   gap: 35px;
 }
-.projects .project-text .project-link ul li a {
+.projects .project-wrap .project-text .project-link ul li a {
   color: #F7B10B;
 }
-.projects .project-text .project-link ul li a img {
+.projects .project-wrap .project-text .project-link ul li a img {
   width: 15px;
   height: 11px;
 }
-.projects .project-text .project-link ul li a:hover img {
+.projects .project-wrap .project-text .project-link ul li a:hover img {
   -webkit-animation: arrow 0.7s ease infinite;
           animation: arrow 0.7s ease infinite;
 }
-
-.project2 .project-wrap {
+.projects .project2 .project-box {
   flex-direction: row-reverse;
 }
-.project2 .project-wrap .project-view {
+.projects .project2 .project-box .project-view {
   height: 100%;
 }
-
-.project3 .project-wrap {
+.projects .project3 .project-box {
   display: flex;
   justify-content: space-around;
 }
-.project3 .project-wrap .project-img a {
+.projects .project3 .project-box .project-img a {
   display: inline-block;
 }
-.project3 .project-wrap .project-img a:first-child {
+.projects .project3 .project-box .project-img a:first-child {
   margin-right: 50px;
 }
-.project3 .project-wrap .project-img a img {
+.projects .project3 .project-box .project-img a img {
   display: block;
   width: 260px;
 }
 
 .contact {
   position: relative;
+  top: 90px;
   height: 100%;
   padding: 0;
 }
@@ -614,6 +665,7 @@ main section h2 {
   bottom: 35px;
   width: 50px;
   height: 50px;
+  border: 2px solid #fff;
   border-radius: 50%;
   background-color: #FACC5F;
   opacity: 0;

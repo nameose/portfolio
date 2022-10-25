@@ -99,27 +99,27 @@
 
   <body>
     <div id="wrap">
-      <header id="header">
-        <div class="header-wrap" id="top">
-          <div class="logo">
+      <header id="header" class="page-header">
+        <div class="header-wrap">
+          <h1 class="logo">
             <a href="index.html">
               <img src="img/logo_01.png" alt="로고 첫 번째 글자" />
               <img src="img/logo_02.png" alt="로고 두 번째 글자" />
               <img src="img/logo_03.png" alt="로고 세 번째 글자" />
             </a>
-          </div>
+          </h1>
           <div class="nav">
-            <ul>
-              <li><a href="#home">home</a></li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#project">project</a></li>
-              <li><a href="#contact">contact</a></li>
+            <ul class="gnb">
+              <li><a href="#main">home</a></li>
+              <li><a href="#section2">about</a></li>
+              <li><a href="#section3">project</a></li>
+              <li><a href="#section4">contact</a></li>
             </ul>
           </div>
         </div>
       </header>
       <main id="main">
-        <section class="home" id="home">
+        <section class="home" id="section1">
           <div class="container">
             <h2>home</h2>
             <div class="slogan">
@@ -154,13 +154,13 @@
             />
             <img src="img/image.svg" alt="그림자 이미지" class="shadow-img" />
             <div class="down-btn">
-              <a href="#about">
+              <a href="#section2" id="go-to-down">
                 <img src="img/arrow_downward.png" alt="아래 버튼" />
               </a>
             </div>
           </div>
         </section>
-        <section id="about">
+        <section class="about-wrap" id="section2">
           <div class="about">
             <div class="container">
               <h2>about me</h2>
@@ -265,220 +265,230 @@
           </div>
           <img src="img/image.svg" alt="그림자 이미지" class="shadow-img" />
         </section>
-        <section class="projects" id="project">
-          <div class="container">
-            <h2>projects</h2>
-            <div class="project1">
-              <div class="container">
-                <div class="project-wrap">
-                  <div class="project-img">
-                    <img src="img/mockup_pc.png" alt="PC" class="project-pc" />
-                    <a
-                      href="https://nameose.github.io/project02/"
-                      target="_blank"
-                    >
+        <section class="projects" id="section3">
+          <div class="project-wrap">
+            <div class="container">
+              <h2>projects</h2>
+              <div class="project1">
+                <div class="container">
+                  <div class="project-box">
+                    <div class="project-img">
                       <img
-                        src="img/project/project2_pc.png"
-                        alt="한솥도시락"
-                        class="project-view"
+                        src="img/mockup_pc.png"
+                        alt="PC"
+                        class="project-pc"
                       />
-                    </a>
-                  </div>
-                  <div class="project-text">
-                    <div class="project-title">
-                      <p>PROJECT 01 .</p>
-                      <p>한솥도시락<span>#반응형</span></p>
+                      <a
+                        href="https://nameose.github.io/project02/"
+                        target="_blank"
+                      >
+                        <img
+                          src="img/project/project2_pc.png"
+                          alt="한솥도시락"
+                          class="project-view"
+                        />
+                      </a>
                     </div>
-                    <div class="project-explain">
-                      <p>
-                        반응형으로 제작한 웹사이트입니다.<br />
-                        한솥도시락 사이트를 클론 코딩하여 구현하였습니다. 또한
-                        기존 사이트에서 아쉬웠던 GNB 부분을
-                        리디자인하였습니다.<br />
-                        웹 접근성과 표준성을 준수하여 제작하였습니다.
-                      </p>
-                    </div>
-                    <div class="project-bottom">
-                      <p>제작 기간<span>2주</span></p>
-                      <p>
-                        사용 프로그램<span
-                          >HTML / CSS / JavaScript / jQuery</span
-                        >
-                      </p>
-                    </div>
-                    <div class="project-link">
-                      <ul>
-                        <li>
-                          <a
-                            href="https://nameose.github.io/project02/"
-                            target="_blank"
+                    <div class="project-text">
+                      <div class="project-title">
+                        <p>PROJECT 01 .</p>
+                        <p>한솥도시락<span>#반응형</span></p>
+                      </div>
+                      <div class="project-explain">
+                        <p>
+                          반응형으로 제작한 웹사이트입니다.<br />
+                          한솥도시락 사이트를 클론 코딩하여 구현하였습니다. 또한
+                          기존 사이트에서 아쉬웠던 GNB 부분을
+                          리디자인하였습니다.<br />
+                          웹 접근성과 표준성을 준수하여 제작하였습니다.
+                        </p>
+                      </div>
+                      <div class="project-bottom">
+                        <p>제작 기간<span>2주</span></p>
+                        <p>
+                          사용 프로그램<span
+                            >HTML / CSS / JavaScript / jQuery</span
                           >
-                            <span>사이트 보기</span>
-                            <img
-                              src="img/arrow_yellow.png"
-                              alt="오른쪽 화살표"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://github.com/nameose/project02"
-                            target="_blank"
-                          >
-                            <span>깃허브 보기</span>
-                            <img
-                              src="img/arrow_yellow.png"
-                              alt="오른쪽 화살표"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://nameose.github.io/project02/sub_page.html"
-                            target="_blank"
-                          >
-                            <span>서브페이지 보기</span>
-                            <img
-                              src="img/arrow_yellow.png"
-                              alt="오른쪽 화살표"
-                            />
-                          </a>
-                        </li>
-                      </ul>
+                        </p>
+                      </div>
+                      <div class="project-link">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://nameose.github.io/project02/"
+                              target="_blank"
+                            >
+                              <span>사이트 보기</span>
+                              <img
+                                src="img/arrow_yellow.png"
+                                alt="오른쪽 화살표"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/nameose/project02"
+                              target="_blank"
+                            >
+                              <span>깃허브 보기</span>
+                              <img
+                                src="img/arrow_yellow.png"
+                                alt="오른쪽 화살표"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://nameose.github.io/project02/sub_page.html"
+                              target="_blank"
+                            >
+                              <span>서브페이지 보기</span>
+                              <img
+                                src="img/arrow_yellow.png"
+                                alt="오른쪽 화살표"
+                              />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="project2">
-              <div class="container">
-                <div class="project-wrap">
-                  <div class="project-img">
-                    <img src="img/mockup_pc.png" alt="PC" class="project-pc" />
-                    <a
-                      href="https://nameose.github.io/project03/"
-                      target="_blank"
-                    >
+              <div class="project2">
+                <div class="container">
+                  <div class="project-box">
+                    <div class="project-img">
                       <img
-                        src="img/project/project3_pc.png"
-                        alt="빅히트 뮤직"
-                        class="project-view"
+                        src="img/mockup_pc.png"
+                        alt="PC"
+                        class="project-pc"
                       />
-                    </a>
-                  </div>
-                  <div class="project-text">
-                    <div class="project-title">
-                      <p>PROJECT 02 .</p>
-                      <p>빅히트 뮤직<span>#반응형</span></p>
+                      <a
+                        href="https://nameose.github.io/project03/"
+                        target="_blank"
+                      >
+                        <img
+                          src="img/project/project3_pc.png"
+                          alt="빅히트 뮤직"
+                          class="project-view"
+                        />
+                      </a>
                     </div>
-                    <div class="project-explain">
-                      <p>
-                        SCSS를 사용하여 제작한 웹사이트입니다.<br />
-                        기존 CSS보다 편리하고 효율적으로 코드를 짤 수 있는
-                        장점이 있다는 것을 알 수 있었습니다.<br />
-                        웹 접근성과 표준성을 준수하여 제작하였습니다.
-                      </p>
-                    </div>
-                    <div class="project-bottom">
-                      <p>제작 기간<span>1일</span></p>
-                      <p>사용 프로그램<span>HTML / SCSS</span></p>
-                    </div>
-                    <div class="project-link">
-                      <ul>
-                        <li>
-                          <a
-                            href="https://nameose.github.io/project03/"
-                            target="_blank"
-                          >
-                            <span>사이트 보기</span>
-                            <img
-                              src="img/arrow_yellow.png"
-                              alt="오른쪽 화살표"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://github.com/nameose/project03"
-                            target="_blank"
-                          >
-                            <span>깃허브 보기</span>
-                            <img
-                              src="img/arrow_yellow.png"
-                              alt="오른쪽 화살표"
-                            />
-                          </a>
-                        </li>
-                      </ul>
+                    <div class="project-text">
+                      <div class="project-title">
+                        <p>PROJECT 02 .</p>
+                        <p>빅히트 뮤직<span>#반응형</span></p>
+                      </div>
+                      <div class="project-explain">
+                        <p>
+                          SCSS를 사용하여 제작한 웹사이트입니다.<br />
+                          기존 CSS보다 편리하고 효율적으로 코드를 짤 수 있는
+                          장점이 있다는 것을 알 수 있었습니다.<br />
+                          웹 접근성과 표준성을 준수하여 제작하였습니다.
+                        </p>
+                      </div>
+                      <div class="project-bottom">
+                        <p>제작 기간<span>1일</span></p>
+                        <p>사용 프로그램<span>HTML / SCSS</span></p>
+                      </div>
+                      <div class="project-link">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://nameose.github.io/project03/"
+                              target="_blank"
+                            >
+                              <span>사이트 보기</span>
+                              <img
+                                src="img/arrow_yellow.png"
+                                alt="오른쪽 화살표"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/nameose/project03"
+                              target="_blank"
+                            >
+                              <span>깃허브 보기</span>
+                              <img
+                                src="img/arrow_yellow.png"
+                                alt="오른쪽 화살표"
+                              />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="project3">
-              <div class="container">
-                <div class="project-wrap">
-                  <div class="project-img">
-                    <a
-                      href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGjicfMaptjCz5MR8PCgui4%2F%25EA%25BF%2580%25EC%25A3%25BC%25EC%25B0%25A8-%25ED%2594%2584%25EB%25A1%259C%25ED%2586%25A0%25ED%2583%2580%25EC%259E%2585%3Fnode-id%3D308%253A6468%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D308%253A7544"
-                      target="_blank"
-                      ><img
-                        src="./img/project/project4_main_w.png"
-                        alt="꿀주차 프로토타입 메인화면"
-                    /></a>
-                    <a
-                      href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGjicfMaptjCz5MR8PCgui4%2F%25EA%25BF%2580%25EC%25A3%25BC%25EC%25B0%25A8-%25ED%2594%2584%25EB%25A1%259C%25ED%2586%25A0%25ED%2583%2580%25EC%259E%2585%3Fnode-id%3D308%253A6468%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D308%253A7544"
-                      target="_blank"
-                      ><img
-                        src="./img/project/project4_home_w.png"
-                        alt="꿀주차 프로토타입 홈화면"
-                    /></a>
-                  </div>
-                  <div class="project-text">
-                    <div class="project-title">
-                      <p>TEAM PROJECT .</p>
-                      <p>꿀주차<span>#UI UX</span></p>
+              <div class="project3">
+                <div class="container">
+                  <div class="project-box">
+                    <div class="project-img">
+                      <a
+                        href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGjicfMaptjCz5MR8PCgui4%2F%25EA%25BF%2580%25EC%25A3%25BC%25EC%25B0%25A8-%25ED%2594%2584%25EB%25A1%259C%25ED%2586%25A0%25ED%2583%2580%25EC%259E%2585%3Fnode-id%3D308%253A6468%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D308%253A7544"
+                        target="_blank"
+                        ><img
+                          src="./img/project/project4_main_w.png"
+                          alt="꿀주차 프로토타입 메인화면"
+                      /></a>
+                      <a
+                        href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGjicfMaptjCz5MR8PCgui4%2F%25EA%25BF%2580%25EC%25A3%25BC%25EC%25B0%25A8-%25ED%2594%2584%25EB%25A1%259C%25ED%2586%25A0%25ED%2583%2580%25EC%259E%2585%3Fnode-id%3D308%253A6468%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D308%253A7544"
+                        target="_blank"
+                        ><img
+                          src="./img/project/project4_home_w.png"
+                          alt="꿀주차 프로토타입 홈화면"
+                      /></a>
                     </div>
-                    <div class="project-explain">
-                      <p>
-                        팀원들과 협업하여 제작한 프로토타입 앱입니다.<br />
-                        앱의 주내용은 사용자에게 주차장 정보와 혜택을 제공하는
-                        주차 기반 서비스입니다. 2030을 타깃으로 하였고, 평소
-                        주차에 불편을 겪고 있는 운전자들이 니즈를 충족하면서
-                        쉽고 편리하게 사용할 수 있는 앱을 제작하였습니다.
-                      </p>
-                    </div>
-                    <div class="project-bottom">
-                      <p>제작 기간<span>3주</span></p>
-                      <p>사용 프로그램<span>Figma</span></p>
-                    </div>
-                    <div class="project-link">
-                      <ul>
-                        <li>
-                          <a
-                            href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGjicfMaptjCz5MR8PCgui4%2F%25EA%25BF%2580%25EC%25A3%25BC%25EC%25B0%25A8-%25ED%2594%2584%25EB%25A1%259C%25ED%2586%25A0%25ED%2583%2580%25EC%259E%2585%3Fnode-id%3D308%253A6468%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D308%253A7544"
-                            target="_blank"
-                          >
-                            <span>프로토타입 보기</span>
-                            <img
-                              src="img/arrow_yellow.png"
-                              alt="오른쪽 화살표"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="pdf/teamproject_proposal.pdf"
-                            target="_blank"
-                          >
-                            <span>기획서 보기</span>
-                            <img
-                              src="img/arrow_yellow.png"
-                              alt="오른쪽 화살표"
-                            />
-                          </a>
-                        </li>
-                      </ul>
+                    <div class="project-text">
+                      <div class="project-title">
+                        <p>TEAM PROJECT .</p>
+                        <p>꿀주차<span>#UI UX</span></p>
+                      </div>
+                      <div class="project-explain">
+                        <p>
+                          팀원들과 협업하여 제작한 프로토타입 앱입니다.<br />
+                          앱의 주내용은 사용자에게 주차장 정보와 혜택을 제공하는
+                          주차 기반 서비스입니다. 2030을 타깃으로 하였고, 평소
+                          주차에 불편을 겪고 있는 운전자들이 니즈를 충족하면서
+                          쉽고 편리하게 사용할 수 있는 앱을 제작하였습니다.
+                        </p>
+                      </div>
+                      <div class="project-bottom">
+                        <p>제작 기간<span>3주</span></p>
+                        <p>사용 프로그램<span>Figma</span></p>
+                      </div>
+                      <div class="project-link">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGjicfMaptjCz5MR8PCgui4%2F%25EA%25BF%2580%25EC%25A3%25BC%25EC%25B0%25A8-%25ED%2594%2584%25EB%25A1%259C%25ED%2586%25A0%25ED%2583%2580%25EC%259E%2585%3Fnode-id%3D308%253A6468%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D308%253A7544"
+                              target="_blank"
+                            >
+                              <span>프로토타입 보기</span>
+                              <img
+                                src="img/arrow_yellow.png"
+                                alt="오른쪽 화살표"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="pdf/teamproject_proposal.pdf"
+                              target="_blank"
+                            >
+                              <span>기획서 보기</span>
+                              <img
+                                src="img/arrow_yellow.png"
+                                alt="오른쪽 화살표"
+                              />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -486,7 +496,7 @@
             </div>
           </div>
         </section>
-        <section class="contact" id="contact">
+        <section class="contact" id="section4">
           <div class="container">
             <div class="contact-wrap">
               <img src="img/contact_bg.png" alt="배경" class="contact-bg" />
@@ -547,9 +557,11 @@
         <div class="copyright">
           <p>COPYRIGHT© OSE. ALL RIGHTS RESERVED.</p>
         </div>
-        <a href="#top" id="back-to-top">
-          <img src="img/arrow_less.png" alt="위 버튼" />
-        </a>
+        <div class="top-btn">
+          <a href="#main" id="back-to-top">
+            <img src="img/arrow_less.png" alt="탑 버튼" />
+          </a>
+        </div>
       </footer>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>

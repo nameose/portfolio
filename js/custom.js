@@ -1,3 +1,36 @@
+//header
+$(function () {
+  var $header = $(".page-header");
+  var $headerOST = $header.offset().top;
+  $(window).scroll(function () {
+    var $currentSCT = $(this).scrollTop();
+    if ($currentSCT > $headerOST) {
+      $header.addClass("sticky");
+    } else {
+      $header.removeClass("sticky");
+    }
+  });
+});
+
+//gnb
+let win = $(window),
+  sections = $("section"),
+  gnb = $(".gnb li");
+const gnbOff = () => {
+  gnb.each(() => {
+    this.removeClass("on");
+  });
+};
+win.scroll(function () {
+  let sct = win.scrollTop();
+  sections.each(function (i) {
+    if (sct >= sections.eq(i).offset().top - 700) {
+      $(".gnb li").eq(i).addClass("on").siblings().removeClass("on");
+      sections.eq(i).addClass("on").siblings().removeClass("on");
+    }
+  });
+});
+
 //chart
 $(function () {
   const animation = $(".animation");
@@ -33,7 +66,16 @@ $(function () {
   }
 });
 
-//topbtn
+//down-btn
+const gtd = document.querySelector("#go-to-down");
+gtd.addEventListener("click", function (e) {
+  e.preventDefault();
+  document
+    .querySelector(gtd.getAttribute("href"))
+    .scrollIntoView({ behavior: "smooth" });
+});
+
+//top-btn
 const btt = document.querySelector("#back-to-top");
 let scrollAmount;
 window.addEventListener("scroll", function () {

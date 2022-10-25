@@ -14,6 +14,7 @@ main section {
   position: relative;
   background-color: $color-gray;
   text-align: center;
+  top: 90px;
   h2 {
     display: none;
   }
@@ -124,8 +125,9 @@ main section {
   }
 }
 
-#about {
+.about-wrap {
   position: relative;
+  top: 90px;
   .about {
     position: relative;
     padding: 50px 0 100px;
@@ -220,136 +222,143 @@ main section {
 
 .projects {
   position: relative;
+  top: 90px;
   margin-top: 50px;
-  h2 {
-    padding: 50px 0;
-    font-family: "Montserrat", sans-serif;
-  }
   .project-wrap {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 150px 0;
-    margin: 50px 0;
-    gap: 10px;
-    .project-img {
+    padding-top: 20px;
+    h2 {
+      padding: 50px 0;
+      font-family: "Montserrat", sans-serif;
+    }
+    .project-box {
       position: relative;
-      border-radius: 0px 0px 15px 15px;
-      overflow: hidden;
-      .project-pc {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 150px 0;
+      margin: 50px 0;
+      gap: 10px;
+      .project-img {
         position: relative;
-        width: 600px;
-        height: auto;
-      }
-      .project-view {
-        position: absolute;
-        width: 600px;
-        top: 35px;
-        right: 0px;
+        border-radius: 0px 0px 15px 15px;
+        overflow: hidden;
+        z-index: 30;
+        .project-pc {
+          position: relative;
+          width: 600px;
+          height: auto;
+        }
+        .project-view {
+          position: absolute;
+          width: 600px;
+          top: 35px;
+          right: 0px;
+        }
       }
     }
-  }
-  .project-text {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 25px;
-    .project-title {
+    .project-text {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 15px;
-      p {
-        &:nth-child(1) {
-          font-family: "Montserrat", sans-serif;
-        }
-        &:nth-child(2) {
-          display: flex;
-          align-items: center;
-          font-size: 24px;
-          color: $color-text2;
-          span {
-            font-size: 16px;
-            color: $color-text1;
-            margin-left: 15px;
+      gap: 25px;
+      .project-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        p {
+          &:nth-child(1) {
+            font-family: "Montserrat", sans-serif;
+          }
+          &:nth-child(2) {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            color: $color-text2;
+            span {
+              font-size: 16px;
+              color: $color-text1;
+              margin-left: 15px;
+            }
           }
         }
       }
-    }
-    .project-explain {
-      width: 380px;
-      p {
-        text-align: start;
-        line-height: 23px;
+      .project-explain {
+        width: 380px;
+        p {
+          text-align: start;
+          line-height: 23px;
+        }
       }
-    }
-    .project-bottom {
-      padding-bottom: 30px;
-      border-bottom: 1px solid #ccc;
-      width: 100%;
-      p {
-        text-align: start;
-        font-weight: 600;
-        &:nth-child(1) {
-          margin-bottom: 5px;
-          span {
-            letter-spacing: 1px;
+      .project-bottom {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        p {
+          text-align: start;
+          font-weight: 600;
+          &:nth-child(1) {
+            margin-bottom: 5px;
+            span {
+              letter-spacing: 1px;
+              font-weight: 400;
+              margin-left: 12px;
+            }
+          }
+          &:nth-child(2) span {
+            font-family: "Montserrat", sans-serif;
             font-weight: 400;
             margin-left: 12px;
           }
         }
-        &:nth-child(2) span {
-          font-family: "Montserrat", sans-serif;
-          font-weight: 400;
-          margin-left: 12px;
-        }
       }
-    }
-    .project-link {
-      padding-top: 10px;
-      ul {
-        display: flex;
-        align-items: center;
-        gap: 35px;
-        li a {
-          color: $color-secondary;
-          img {
-            width: 15px;
-            height: 11px;
-          }
-          &:hover img {
-            animation: arrow 0.7s ease infinite;
+      .project-link {
+        padding-top: 10px;
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 35px;
+          li a {
+            color: $color-secondary;
+            img {
+              width: 15px;
+              height: 11px;
+            }
+            &:hover img {
+              animation: arrow 0.7s ease infinite;
+            }
           }
         }
       }
     }
   }
-}
-.project2 .project-wrap {
-  flex-direction: row-reverse;
-  .project-view {
-    height: 100%;
-  }
-}
-.project3 .project-wrap {
-  display: flex;
-  justify-content: space-around;
-  .project-img a {
-    display: inline-block;
-    &:first-child {
-      margin-right: 50px;
+  .project2 .project-box {
+    flex-direction: row-reverse;
+    .project-view {
+      height: 100%;
     }
-    img {
-      display: block;
-      width: 260px;
+  }
+  .project3 .project-box {
+    display: flex;
+    justify-content: space-around;
+    .project-img a {
+      display: inline-block;
+      &:first-child {
+        margin-right: 50px;
+      }
+      img {
+        display: block;
+        width: 260px;
+      }
     }
   }
 }
 
 .contact {
   position: relative;
+  top: 90px;
   height: 100%;
   padding: 0;
   .contact-wrap {
