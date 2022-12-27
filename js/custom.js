@@ -31,6 +31,27 @@ win.scroll(function () {
   });
 });
 
+const homebtn = document.querySelector(".home_btn");
+const aboutbtn = document.querySelector(".about_btn");
+const projectbtn = document.querySelector(".project_btn");
+const contactbtn = document.querySelector(".contact_btn");
+homebtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector("#main").scrollIntoView({ behavior: "smooth" });
+});
+aboutbtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector("#section2").scrollIntoView({ behavior: "smooth" });
+});
+projectbtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector("#section3").scrollIntoView({ behavior: "smooth" });
+});
+contactbtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector("#section4").scrollIntoView({ behavior: "smooth" });
+});
+
 //chart
 $(function () {
   const animation = $(".animation");
