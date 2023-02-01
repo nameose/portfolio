@@ -492,7 +492,15 @@ main section h2 {
   font-weight: 400;
   margin-left: 12px;
 }
+.projects .project-wrap .project-text .project-bottom p:nth-child(2) {
+  margin-bottom: 5px;
+}
 .projects .project-wrap .project-text .project-bottom p:nth-child(2) span {
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-left: 12px;
+}
+.projects .project-wrap .project-text .project-bottom p:nth-child(3) span {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin-left: 12px;

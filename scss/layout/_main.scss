@@ -307,7 +307,15 @@ main section {
               margin-left: 12px;
             }
           }
-          &:nth-child(2) span {
+          &:nth-child(2){
+            margin-bottom: 5px;
+            span {
+              letter-spacing: 1px;
+              font-weight: 400;
+              margin-left: 12px;
+            }
+          }
+          &:nth-child(3) span {
             font-family: "Montserrat", sans-serif;
             font-weight: 400;
             margin-left: 12px;
