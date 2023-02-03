@@ -107,8 +107,8 @@ p {
   position: relative;
   width: 28px;
   top: -1px;
-  -webkit-animation: rotate_star 4s linear infinite;
-          animation: rotate_star 4s linear infinite;
+  -webkit-animation: rotate_star-logo 4s ease infinite;
+          animation: rotate_star-logo 4s ease infinite;
 }
 .header-wrap .logo img:nth-child(2) {
   position: relative;
@@ -120,12 +120,12 @@ p {
   width: 12px;
   right: 10px;
 }
-@-webkit-keyframes rotate_star {
+@-webkit-keyframes rotate_star-logo {
   100% {
     transform: rotate(360deg);
   }
 }
-@keyframes rotate_star {
+@keyframes rotate_star-logo {
   100% {
     transform: rotate(360deg);
   }
@@ -145,7 +145,7 @@ p {
 }
 .header-wrap .nav .gnb li a {
   position: relative;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 .header-wrap .nav .gnb li a::after {
   position: absolute;
@@ -242,8 +242,8 @@ main section h2 {
   width: 16px;
 }
 .home .link ul li a:hover img {
-  -webkit-animation: arrow 0.7s ease infinite;
-          animation: arrow 0.7s ease infinite;
+  -webkit-animation: arrow 0.6s ease infinite;
+          animation: arrow 0.6s ease infinite;
 }
 @-webkit-keyframes arrow {
   0% {
@@ -269,9 +269,26 @@ main section h2 {
 }
 .home .star-bg {
   position: absolute;
-  left: 50%;
-  top: 66%;
-  transform: translate(-50%, -50%);
+  left: -33%;
+  top: -43%;
+  -webkit-animation: rotate_star-bg 40s linear infinite;
+          animation: rotate_star-bg 40s linear infinite;
+}
+@-webkit-keyframes rotate_star-bg {
+  0% {
+    transform: translateX(50%) translateY(50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(50%) translateY(50%) rotate(360deg);
+  }
+}
+@keyframes rotate_star-bg {
+  0% {
+    transform: translateX(50%) translateY(50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(50%) translateY(50%) rotate(360deg);
+  }
 }
 .home .profile-img {
   position: relative;
@@ -295,7 +312,7 @@ main section h2 {
   left: 48%;
   bottom: 0;
   z-index: 30;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 .home .down-btn a {
   padding: 25px 20px 36px;
@@ -312,6 +329,7 @@ main section h2 {
 .about-wrap {
   position: relative;
   top: 90px;
+  background-color: white;
 }
 .about-wrap .about {
   position: relative;
@@ -345,6 +363,7 @@ main section h2 {
   font-size: 20px;
   font-weight: 600;
   color: #23203F;
+  transition: all 0.3s;
 }
 .about-wrap .about .info-wrap .info-box .text {
   padding: 25px 15px 65px;
@@ -356,6 +375,9 @@ main section h2 {
 }
 .about-wrap .about .info-wrap .info-box:hover {
   transform: translateY(-15px);
+}
+.about-wrap .about .info-wrap .info-box:hover .title {
+  color: #FACC5F;
 }
 .about-wrap .skill {
   position: relative;
@@ -435,11 +457,32 @@ main section h2 {
   width: 600px;
   height: auto;
 }
-.projects .project-wrap .project-box .project-img .project-view {
+.projects .project-wrap .project-box .project-img a .project-view {
   position: absolute;
   width: 600px;
   top: 35px;
   right: 0px;
+  border-radius: 4px 4px 0px 0px;
+}
+.projects .project-wrap .project-box .project-img a .black-box {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: 35px;
+  right: 0;
+  line-height: 370px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 4px 4px 0px 0px;
+  transition: all 0.4s;
+  opacity: 0;
+}
+.projects .project-wrap .project-box .project-img a:hover .black-box {
+  opacity: 1;
 }
 .projects .project-wrap .project-text {
   position: relative;
@@ -521,8 +564,8 @@ main section h2 {
   height: 11px;
 }
 .projects .project-wrap .project-text .project-link ul li a:hover img {
-  -webkit-animation: arrow 0.7s ease infinite;
-          animation: arrow 0.7s ease infinite;
+  -webkit-animation: arrow 0.6s ease infinite;
+          animation: arrow 0.6s ease infinite;
 }
 .projects .project2 .project-box {
   flex-direction: row-reverse;
@@ -643,8 +686,8 @@ main section h2 {
   width: 16px;
 }
 .contact .contact-wrap .link ul li a:hover img {
-  -webkit-animation: arrow 0.7s ease infinite;
-          animation: arrow 0.7s ease infinite;
+  -webkit-animation: arrow 0.6s ease infinite;
+          animation: arrow 0.6s ease infinite;
 }
 
 #footer {

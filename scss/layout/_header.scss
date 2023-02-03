@@ -34,7 +34,7 @@
         position: relative;
         width: 28px;
         top: -1px;
-        animation: rotate_star 4s linear infinite;
+        animation: rotate_star-logo 4s ease infinite;
       }
       &:nth-child(2) {
         position: relative;
@@ -46,7 +46,7 @@
         width: 12px;
         right: 10px;
       }
-      @keyframes rotate_star {
+      @keyframes rotate_star-logo {
         100% {
           transform: rotate(360deg);
         }
@@ -66,7 +66,7 @@
         line-height: 90px;
         a {
           position: relative;
-          transition: 0.3s;
+          transition: all 0.3s;
           &::after {
             position: absolute;
             content: "";
