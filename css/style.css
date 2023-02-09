@@ -654,11 +654,11 @@ main section h2 {
   font-size: 18px;
 }
 .contact .contact-wrap .contact-text p:last-child {
-  margin-top: 6px;
+  margin-top: 8px;
 }
 .contact .contact-wrap .link {
   position: absolute;
-  right: 0;
+  right: -2%;
   top: 58%;
 }
 .contact .contact-wrap .link ul {

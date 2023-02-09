@@ -449,13 +449,13 @@ main section {
         text-align: start;
         font-size: 18px;
         &:last-child {
-          margin-top: 6px;
+          margin-top: 8px;
         }
       }
     }
     .link {
       position: absolute;
-      right: 0;
+      right: -2%;
       top: 58%;
       ul {
         display: flex;
